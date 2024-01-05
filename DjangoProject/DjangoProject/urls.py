@@ -18,16 +18,22 @@ from django.contrib import admin
 from django.urls import path, include
 from users import views as user_views
 from django.contrib.auth import views as auth_views
-
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
     
     path('admin/', admin.site.urls),
     path('register/',user_views.register,name='register'),
-    path('',include('blog.urls') ),
+    path('blog/',include('blog.urls') ),
+    path('', include('railway.urls')),
     path('login/',auth_views.LoginView.as_view(template_name='users/login.html'),name='login'), #this is searchinf for a template at /login/
-   # path('logout/',auth_views.LogoutView.as_view(template_name='users/logout.html'),name='logout')
-   path('logout/',user_views.logoutuser,name='logout'),
+    #path('logout/',auth_views.LogoutView.as_view(template_name='users/logout.html'),name='logout')
+    path('logout/',user_views.logoutuser,name='logout'),
+    path('profile/', user_views.profile,name='profile')
+    
     # here LoginView and LogoutView are class based views
 ]
+if settings.DEBUG:
+ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

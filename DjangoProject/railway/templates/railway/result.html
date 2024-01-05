@@ -1,0 +1,45 @@
+{% extends "railway/rail_base.html" %}
+
+{% block content %}
+
+<div style="margin-top: 50px;" class="container-fluid" >
+    <center><h2> Trains </h2></center>
+
+    <table class="table table-striped" style="width: 90%;margin-left:75px ;margin-top: 30px;">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Train Number</th>
+                <th scope="col">Train Name</th>
+                <th scope="col">Source</th>
+                <th scope="col">Destination</th>
+                <th scope="col"> Running Days</th>
+                <th scope="col">Price</th>
+                <th scope="col">Seats Available</th>
+                <th scope="col">Departure Time</th>
+                <th scope="col">Arrival Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            {%for train in filtered_trains%}
+            
+            
+            <tr>
+                
+                <td><a href="">{{train.pk}}</a></td>
+                <td>{{train.train_name}}</td>
+                <td>{{train.source}}</td>
+                <td>{{train.destination}}</td>
+                <td>{{train.running_days}}</td>
+                <td>{{train.price}}</td>
+                <td>{{train.seats_available}}</td>
+                <td>{{ train.departure_time }}</td>
+                <td>{{ train.arrival_time }}</td>
+            </tr>
+            
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
