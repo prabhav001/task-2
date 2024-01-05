@@ -1,0 +1,130 @@
+[
+    {
+        "model": "railway.train",
+        "pk": 1,
+        "fields": {
+            "train_name": "Train1",
+            "source": "Delhi",
+            "destination": "Kolkata",
+            "price": 120,
+            "arrival_time": "13:00:00",
+            "departure_time": "02:00:00",
+            "seats_available": 100,
+            "running_days": "Monday,Wednesday"
+        }
+    },
+    {
+        "model": "railway.train",
+        "pk": 2,
+        "fields": {
+            "train_name": "Train2",
+            "source": "Mumbai",
+            "destination": "Chennai",
+            "price": 150,
+            "arrival_time": "14:30:00",
+            "departure_time": "03:30:00",
+            "seats_available": 80,
+            "running_days": "Tuesday,Thursday,Saturday"
+        }
+    },
+    {
+        "model": "railway.train",
+        "pk": 3,
+        "fields": {
+            "train_name": "Train3",
+            "source": "Kolkata",
+            "destination": "Delhi",
+            "price": 110,
+            "arrival_time": "12:45:00",
+            "departure_time": "01:45:00",
+            "seats_available": 120,
+            "running_days": "Monday,Thursday,Sunday"
+        }
+    },
+    {
+        "model": "railway.train",
+        "pk": 4,
+        "fields": {
+            "train_name": "Train4",
+            "source": "Chennai",
+            "destination": "Mumbai",
+            "price": 130,
+            "arrival_time": "15:15:00",
+            "departure_time": "04:15:00",
+            "seats_available": 90,
+            "running_days": "Tuesday,Friday,Saturday"
+        }
+    },
+    {
+        "model": "railway.train",
+        "pk": 5,
+        "fields": {
+            "train_name": "Train5",
+            "source": "Bangalore",
+            "destination": "Hyderabad",
+            "price": 140,
+            "arrival_time": "13:45:00",
+            "departure_time": "02:45:00",
+            "seats_available": 110,
+            "running_days": "Wednesday,Friday,Sunday"
+        }
+    },
+    {
+        "model": "railway.train",
+        "pk": 6,
+        "fields": {
+            "train_name": "Train6",
+            "source": "Hyderabad",
+            "destination": "Bangalore",
+            "price": 160,
+            "arrival_time": "16:00:00",
+            "departure_time": "05:00:00",
+            "seats_available": 75,
+            "running_days": "Thursday,Saturday,Sunday"
+        }
+    },
+    {
+        "model": "railway.train",
+        "pk": 7,
+        "fields": {
+            "train_name": "Train7",
+            "source": "Ahmedabad",
+            "destination": "Pune",
+            "price": 125,
+            "arrival_time": "14:00:00",
+            "departure_time": "03:00:00",
+            "seats_available": 105,
+            "running_days": "Monday,Wednesday,Friday"
+        }
+    },
+    {
+        "model": "railway.train",
+        "pk": 8,
+        "fields": {
+            "train_name": "Train8",
+            "source": "Pune",
+            "destination": "Ahmedabad",
+            "price": 135,
+            "arrival_time": "15:30:00",
+            "departure_time": "04:30:00",
+            "seats_available": 95,
+            "running_days": "Tuesday,Thursday,Saturday"
+        }
+    },
+    {
+        "model": "railway.train",
+        "pk": 9,
+        "fields": {
+            "train_name": "Train9",
+            "source": "Jaipur",
+            "destination": "Lucknow",
+            "price": 145,
+            "arrival_time": "12:30:00",
+            "departure_time": "01:30:00",
+            "seats_available": 115,
+            "running_days": "Monday,Thursday,Saturday"
+        }
+    }
+  
+]
+    
